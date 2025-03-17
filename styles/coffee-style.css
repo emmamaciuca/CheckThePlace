@@ -1,0 +1,487 @@
+:root{
+  --color-darkgreen:#323D36;
+  --color-eerieblack:#0F1C15;
+}
+
+*{
+    box-sizing: border-box;
+    background-color: #FCFCFC;
+    font-family: 'Ovo', sans-serif;
+}
+
+body{
+    padding: 0 0;
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    background-color: #FCFCFC ;
+}
+
+header ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header a{
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    border-top: 1px solid #999;
+    color: var(--color-eerieblack);
+    background-color:#FCFCFC;
+}
+
+header .title{
+    padding: 1em;
+    background-color:#FCFCFC;
+    padding-left: 2em;
+    color: var(--color-eerieblack);
+    font-weight: 700;
+}
+
+.active{
+    background-color: #A6B5AC;
+}
+
+li a:hover{
+    background-color: #C0C9CC;
+}
+
+main{
+    margin-top: 3em;
+    padding: 0;
+}
+
+.cards{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
+    grid-gap: 4em;
+    margin-bottom: 4em;
+    
+    padding-right: 7em;
+    padding-left: 7em;
+    padding-top: 4em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cards li{
+    margin-bottom: 1em;
+    background-color: white;
+    border-radius: 20px;
+    overflow:scroll;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    position: relative;
+    width: 100%;
+    transition: width 2s, height 4s;
+}
+
+.cards img
+{
+    width: 100%;
+    height: 60%;
+    display: block;
+}
+
+/*
+.cards li:active{
+  width: 120%;
+  height: 105%;
+  overflow: hidden;
+}*/
+#add-coffee-form
+{
+  padding: 20px;
+  background-color: white;
+}
+#add-coffee-form h3
+{
+    margin: 0;
+    background-color: white;
+}
+
+#add-coffee-form input,label
+{
+    margin: 10px 0;
+}
+
+ 
+.coffee-shop-details
+{
+    padding: 20px;
+    background-color: white;
+}
+
+
+.coffee-shop-details h3
+{
+    margin: 0;
+    background-color: white;
+}
+
+.coffee-shop-details p
+{
+    margin: 10px 0;
+}
+
+.cards li:hover
+{
+    border: 2px solid #C1C2AD;
+}
+.cards p
+{
+    background-color: white;
+}
+
+
+
+
+.MyCoffee div,.MyCoffee p,.MyCoffee i, .MyCoffee h3, .MyCoffee .stars i, .MyCoffee .rating-box .stars
+{
+  background-color:#C1C2AD;
+  color: white;
+}
+
+
+/* STARS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.rating-box 
+{ 
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  background: linear-gradient (45deg, #ffd195,#ffb283);
+  position: relative;
+  background-color: white;
+  padding: 5px 50px 40px; 
+  border-radius: 25px;
+}
+
+
+.rating-box .stars
+{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: white;
+}
+
+.stars i{
+  color: #e6e6e6;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.2 ease;
+  background-color: white;
+}
+
+
+
+.bg-photo{
+    display: block;
+    height:25em;
+    width: 100%;
+    object-fit:scale-down;
+}
+
+  footer{
+    padding: 2em 2em 2em 2em ;
+    background-color: var(--color-darkgreen);
+}
+
+
+footer ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 2em;
+    margin-bottom: 1em;
+    
+    padding: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--color-darkgreen);
+}
+
+
+footer li{
+    background-color: var(--color-darkgreen);  
+    width: fit-content;
+    margin-bottom: 1em;
+}
+
+footer p, footer h3{
+    background-color: var(--color-darkgreen);
+    color: #C0C9CC;
+}
+
+footer a{
+    background-color: var(--color-darkgreen);
+    color: #C0C9CC;
+    text-decoration: none;
+}
+footer div{
+    background-color: var(--color-darkgreen);
+}
+
+footer a:hover{
+    color:#595454;
+}
+
+
+
+
+/* CEASCA CAFEA */
+#container {
+	position: relative;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.steam {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-top: -30px;
+  margin-left: 30px;
+  z-index: 0;
+  opacity: 0;
+}
+
+#steam1 {
+  animation: steam1 4s ease-out infinite;
+}
+
+#steam3 {
+  animation: steam1 4s ease-out 1s infinite;
+}
+
+@keyframes steam1 {
+  0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+  100% {transform: translateY(-200px) translateX(-20px) scale(1); opacity: 0;}
+}
+
+#steam2 {
+  animation: steam2 4s ease-out 0.5s infinite;
+}
+
+#steam4 {
+  animation: steam2 4s ease-out 1.5s infinite;
+}
+
+
+@keyframes steam2 {
+  0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+  100% {transform: translateY(-200px) translateX(20px) scale(1); opacity: 0;}
+}
+
+#cup {
+  z-index: 1;
+}
+
+#cup-body {
+  position: absolute;
+  height: 80px;
+  width: 120px;
+  border-radius: 0 0 150px 150px;
+  background-color: #fff;
+  margin: auto;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#cup-shade {
+  position: relative;
+  height: 100px;
+  width: 200px;
+  background-color: #F3F3F3;
+  display: inline-block;
+  margin-left: 42%;
+  margin-top: -3px;
+  transform: rotate(50deg);
+  z-index: 1;
+}
+
+#cup-handle {
+  position: relative;
+  height: 45px;
+  width: 50px;
+  border-radius: 0 150px 150px 0;
+  border: 8px solid #F3F3F3;
+  margin-bottom: 55px;
+  margin-left: 100px;
+  display: inline-block;
+  z-index: 0;
+}
+
+#saucer {
+  position: absolute;
+  height: 18px;
+  width: 115px;  
+  border-radius: 0 0 100px 100px;
+  background-color: #F9F9F9;
+  margin-top: -32px;
+  margin-left: 5px;
+  z-index: 2;
+}
+
+
+/* Formular */
+ #add-coffee-form {
+  background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: scroll;
+}
+
+#add-coffee-form div {
+  background-color: white;
+
+}
+
+#add-coffee-form h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  background-color: white;
+
+}
+
+
+#add-coffee-form label {
+  display: block;
+  font-weight: bold;
+  background-color: white;
+  margin-bottom: 0px;
+}
+
+#add-coffee-form input {
+  width: 100%;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #A6B5AC;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background-color: #C1C2AD;
+}
+
+
+@media (min-width: 40em) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  header ul {
+    display: flex;
+  }
+  header li a {
+    border: 0;
+  }
+
+  footer ul{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1em;
+  }
+
+  #dropdown-button{
+    display: none;
+  }
+
+}
+
+@media (max-width: 40em) 
+{
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header ul {
+    display: flex;
+  }
+  header li a {
+    border: 0;
+  }
+
+  #dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #FCFCFC;
+    z-index: 1000;
+    text-align: center;
+  }
+  
+  #dropdown-menu li {
+    border-top: 1px solid #999;
+  }
+  
+  #dropdown:hover #dropdown-menu{
+    display: block;
+  }
+  
+  #dropdown a:hover{
+    background-color: #C0C9CC;
+  }
+  #dropdown-button {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: #595454;
+    background-color: #FCFCFC;
+    position: static;
+    border-top: 1px solid #FCFCFC;
+    width: 7em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 80em) {
+  main {
+    display: grid;
+    grid-gap: 3em;
+  }
+
+  .cards{
+    display: grid;
+    grid-gap: 7em;
+  }
+  footer ul{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1em;
+  }
+
+  #dropdown-button{
+    display: none;
+  }
+}

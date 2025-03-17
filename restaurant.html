@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/restaurant-style.css" type="text/css">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Ovo&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type = "image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <title>Check the Place</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="title">Check the Place</div>
+        <nav id="dropdown">
+            <a href="#" id="dropdown-button">Menu</a>
+            <ul id="dropdown-menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="coffee.html">Coffee Shops</a>
+                </li>
+                <li>
+                    <a href="restaurant.html" class="active">Restaurants</a>
+                </li>
+                <li>
+                    <a href="login.html">Log In</a>
+                </li>
+                <li>
+                    <a href="signup.html">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <article>
+            <div class="photo">
+                <img src="images/restaurants-header.png" class="bg-photo" alt="Restaurant Image">
+            </div>
+
+            <ul class="cards">
+                <li>
+                    <form id="add-restaurant-form">
+                    <h3>Add a New Restaurant</h3>
+
+                    <div>
+                    <label for="restaurant-name" >Name:</label>
+                    <input type="text" id="restaurant-name" name="restaurant-name" required/>
+                    </div>
+
+                    <div>
+                        <label for="restaurant-adress">Adress:</label>
+                        <input type="text" id="restaurant-adress" name="restaurant-adress" required/>    
+                    </div>
+                    
+                    <div>
+                        <label for="restaurant-time-start">Opening hour:</label>
+                        <input type="time" id="restaurant-time-start" name="restaurant-time-start" />
+                    </div>
+                    
+                    <div>
+                        <label for="restaurant-time-close">Closing hour:</label>
+                        <input type="time" id="restaurant-time-close" name="restaurant-time-close" />
+                    </div>
+                    
+                    <div>
+                        <label for="restaurant-url">Enter an URL for the picture (optional):</label>
+                        <input type="url" name="restaurant-url" id="restaurant-url" placeholder="https://example.com" pattern="https://.*" size="30" required />
+                    </div>
+                    
+                    <button type="submit" id="buttonSubmit">Add Restaurant</button>
+                    </form>
+                </li>
+                <li>
+                    <img src="images/yoshi.png" alt="Yoshi Sushi">
+                    <div class="restaurant-details">
+                        <h3>Yoshi Sushi&Teppanyaki</h3>
+                        <p>Adress: Banul Antonache 40-44, Bucharest</p>
+                        <p>Schedule: 12:00-00:00</p>
+                        <p>Rate your experience</p>
+                        <div class="rating-box">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/gyst.png" alt="GYST">
+                    <div class="restaurant-details">
+                        <h3>GYST</h3>
+                        <p>Adress: Blanari 18, Bucharest</p>
+                        <p>Schedule: 10:00-22:00</p>
+                        <p>Rate your experience</p>
+                        <div class="rating-box">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/vacamuuu.png" alt="Vacamuu">
+                    <div class="restaurant-details">
+                        <h3>Vacamuu</h3>
+                        <p>Adress: Calea Floreasca 111, Bucharest</p>
+                        <p>Schedule: 12:00-00:00</p>
+                        <p>Rate your experience</p>
+                        <div class="rating-box">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/mom.png" alt="MOM">
+                    <div class="restaurant-details">
+                        <h3>MOM</h3>
+                        <p>Adress: Strada Franceza 2-4, Bucharest</p>
+                        <p>Schedule: 12:00-00:00</p>
+                        <p>Rate your experience</p>
+                        <div class="rating-box">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/barissimo.png" alt="Barissimo">
+                    <div class="restaurant-details">
+                        <h3>Barissimo</h3>
+                        <p>Adress: Ferdinand 32, Constanta</p>
+                        <p>Schedule: 08:00-00:00</p>
+                        <p>Rate your experience</p>
+                        <div class="rating-box">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/lebab.png" alt="LeBab">
+                    <div class="restaurant-details">
+                        <h3>Le Bab</h3>
+                        <p>Adress: Calea Victoriei 12A, Bucharest</p>
+                        <p>Schedule: 11:00-23:30</p>
+                        <p>Rate your experience</p>
+                        <div class="rating-box">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <ul class="casete-final">
+            <li class="about">
+                <h3>About us</h3>
+                <p>Savor flavors, share stories</p>
+                <p>Uncover diverse dining experiences</p>
+            </li>
+            <li class="contact">
+                <h3>Contact</h3>
+                <p>Phone number +40733784605</p>
+                <p>Adress 123 Street, Bucharest</p>
+                <p>Email emma@checktheplace.com</p>
+            </li>
+            <li class="business">
+                <h3>Business</h3>
+                <p><a href="coffee.html">Find a Cafe</a></p>
+                <p><a href="restaurant.html">Find a Restaurant</a></p>
+                <p><a href="signup.html">Sign Up</a></p>
+            </li>
+            <li>
+                <div id="container">
+                    <div class="steam" id="steam1"> </div>
+                    <div class="steam" id="steam2"> </div>
+                    <div class="steam" id="steam3"> </div>
+                    <div class="steam" id="steam4"> </div>
+                
+                    <div id="cup">
+                        <div id="cup-body">
+                            <div id="cup-shade"></div>
+                        </div>
+                        <div id="cup-handle"></div>
+                    </div>
+                
+                    <div id="saucer"></div>
+                
+                    <div id="shadow"></div>
+                </div>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/restaurant.js"></script>
+
+</body>
+</html>

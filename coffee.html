@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/coffee-style.css" type="text/css">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Ovo&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="icon" href="images/favicon.ico" type = "image/x-icon">
+    <title>Check the Place</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="title">Check the Place</div>
+        <nav id="dropdown">
+            <a href="#" id="dropdown-button">Menu</a>
+            <ul id="dropdown-menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="coffee.html" class="active">Coffee Shops</a>
+                </li>
+                <li>
+                    <a href="restaurant.html">Restaurants</a>
+                </li>
+                <li>
+                    <a href="login.html">Log In</a>
+                </li>
+                <li>
+                    <a href="signup.html">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <article>
+            <div class="photo">
+                <img src="images/cafea-header22.png" class="bg-photo" alt="Coffee Shop Image">
+            </div>
+
+            <ul class="cards">
+                <li>
+                    <form id="add-coffee-form">
+                    <h3>Add a New Coffee Shop</h3>
+
+                    <div>
+                    <label for="coffee-name" >Name:</label>
+                    <input type="text" id="coffee-name" name="coffee-name" required/>
+                    </div>
+
+                    <div>
+                        <label for="coffee-adress">Adress:</label>
+                        <input type="text" id="coffee-adress" name="coffee-adress" required/>    
+                    </div>
+                    
+                    <div>
+                        <label for="coffee-time-start">Opening hour:</label>
+                        <input type="time" id="coffee-time-start" name="coffee-time-start" />
+                    </div>
+                    
+                    <div>
+                        <label for="coffee-time-close">Closing hour:</label>
+                        <input type="time" id="coffee-time-close" name="coffee-time-close" />
+                    </div>
+                    
+                    <div>
+                        <label for="coffee-url">Enter an URL for the picture (optional):</label>
+                        <input type="url" name="coffee-url" id="coffee-url" placeholder="https://example.com" pattern="https://.*" size="30" required />
+                    </div>
+                    
+                    <button type="submit" id="buttonSubmit">Add Coffee Shop</button>
+                    </form>
+                </li>
+                <li>
+                    <img src="images/forma.png" alt="Forma">
+                    <div class="coffee-shop-details">
+                        <h3>Forma Coffeshop</h3>
+                        <p>Adress: Ion Ghica 4, Bucharest </p>
+                        <p>Schedule: 12:00-23:00 </p>
+                        <p>Rate your experience</p>
+                        <div class="rating-box">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/meron.png" alt="Meron">
+                    <div class="coffee-shop-details">
+                        <h3>Meron Coffee</h3>
+                        <p>Adress: Regina Elisabeta 40, Bucharest</p>
+                        <p>Schedule: 08:00-20:00</p>
+                        <p>Rate your experience</p>
+                        <div class="rating-box">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/ototo1.png" alt="Ototo">
+                    <div class="coffee-shop-details">
+                        <h3>Ototo</h3>
+                        <p>Adress: Calea Victoriei 153, Bucharest</p>
+                        <p>Schedule: 08:00-21:00</p>
+                        <p>Rate your experience</p>
+                        <div class="rating-box">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/origo.png" alt="Origo">
+                    <div class="coffee-shop-details">
+                        <h3>Origo</h3>
+                        <p>Adress: Lipscani 9, Bucharest</p>
+                        <p>Schedule: 07:30-00:00</p>
+                        <p>Rate your experience</p>
+                        <div class="rating-box">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/halef.png" alt="Halef">
+                    <div class="coffee-shop-details">
+                        <h3>Halef</h3>
+                        <p>Adress: Regina Elisabeta 28, Bucharest</p>
+                        <p>Schedule: 10:00-22:00</p>
+                        <p>Rate your experience</p>
+                        <div class="rating-box">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <ul class="casete-final">
+            <li class="about">
+                <h3>About us</h3>
+                <p>Savor flavors, share stories</p>
+                <p>Uncover diverse dining experiences</p>
+            </li>
+            <li class="contact">
+                <h3>Contact</h3>
+                <p>Phone number +40733784605</p>
+                <p>Adress 123 Street, Bucharest</p>
+                <p>Email emma@checktheplace.com</p>
+            </li>
+            <li class="business">
+                <h3>Business</h3>
+                <p><a href="coffee.html">Find a Cafe</a></p>
+                <p><a href="restaurant.html">Find a Restaurant</a></p>
+                <p><a href="signup.html">Sign Up</a></p>
+            </li>
+            <li>
+                <div id="container">
+                    <div class="steam" id="steam1"> </div>
+                    <div class="steam" id="steam2"> </div>
+                    <div class="steam" id="steam3"> </div>
+                    <div class="steam" id="steam4"> </div>
+                
+                    <div id="cup">
+                        <div id="cup-body">
+                            <div id="cup-shade"></div>
+                        </div>
+                        <div id="cup-handle"></div>
+                    </div>
+                
+                    <div id="saucer"></div>
+                
+                    <div id="shadow"></div>
+                </div>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/coffee.js"></script>
+
+</body>
+</html>

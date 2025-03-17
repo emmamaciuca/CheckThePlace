@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/login-style.css" type="text/css">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Ovo&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type = "image/x-icon">
+    <!-- <script src="js/login.js"></script> -->
+    <title>Check the Place</title>
+</head>
+<body>
+    <header>
+        <div class="title">Check the Place</div>
+        <nav id="dropdown">
+            <a href="#" id="dropdown-button">Menu</a>
+            <ul id="dropdown-menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="coffee.html">Coffee Shops</a>
+                </li>
+                <li>
+                    <a href="restaurant.html">Restaurants</a>
+                </li>
+                <li>
+                    <a href="login.html" class="active">Log In</a>
+                </li>
+                <li>
+                    <a href="signup.html">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="login-container">
+            <div id="login-form">
+              <h2>Login</h2>
+              <form>
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" id="username" name="username" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" placeholder="Enter your password">
+                </div>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+              </form>
+            </div>
+          </div>
+    </main>
+
+    <footer>
+        <ul class="casete-final">
+            <li class="about">
+                <h3>About us</h3>
+                <p>Savor flavors, share stories</p>
+                <p>Uncover diverse dining experiences</p>
+            </li>
+            <li class="contact">
+                <h3>Contact</h3>
+                <p>Phone number +40733784605</p>
+                <p>Adress 123 Street, Bucharest</p>
+                <p>Email emma@checktheplace.com</p>
+            </li>
+            <li class="business">
+                <h3>Business</h3>
+                <p><a href="coffee.html">Find a Cafe</a></p>
+                <p><a href="restaurant.html">Find a Restaurant</a></p>
+                <p><a href="signup.html">Sign Up</a></p>
+            </li>
+            <li>
+                <div id="container">
+                    <div class="steam" id="steam1"> </div>
+                    <div class="steam" id="steam2"> </div>
+                    <div class="steam" id="steam3"> </div>
+                    <div class="steam" id="steam4"> </div>
+                
+                    <div id="cup">
+                        <div id="cup-body">
+                            <div id="cup-shade"></div>
+                        </div>
+                        <div id="cup-handle"></div>
+                    </div>
+                
+                    <div id="saucer"></div>
+                
+                    <div id="shadow"></div>
+                </div>
+            </li>
+        </ul>
+    </footer>
+<script src="js/login.js"></script>
+</body>
+</html>
